@@ -2,7 +2,7 @@
   "schema_version": "1.1",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
-  "catalog_version": "1.0.0-alpha.1-private.1",
+  "catalog_version": "1.0.0-alpha.1-private.2",
   "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
   "owner": {
@@ -19,6 +19,7 @@
       "repository": "https://github.com/mroshdy91/HAPAtlas-Plugin",
       "source_repo": "mroshdy91/HAPAtlas-Plugin",
       "ref": "v1.0.0-alpha.1-private.1",
+      "commit": "590e15c28bb430f3c423618418543ccb9ba8e66d",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [

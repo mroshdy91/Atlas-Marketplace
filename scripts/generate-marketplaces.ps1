@@ -49,9 +49,10 @@ $claudePlugins = @(
         [ordered]@{
             name = $plugin.name
             source = [ordered]@{
-                source = 'github'
-                repo = $plugin.source_repo
+                source = 'url'
+                url = "$($plugin.repository).git"
                 ref = $plugin.ref
+                sha = $plugin.commit
             }
             description = $plugin.description
             version = $plugin.version
