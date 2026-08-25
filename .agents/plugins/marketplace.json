@@ -1,0 +1,21 @@
+{
+  "name": "atlas-marketplace",
+  "interface": {
+    "displayName": "Atlas Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "hapatlas",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/HAPAtlas-Plugin.git",
+        "ref": "v1.0.0-alpha.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

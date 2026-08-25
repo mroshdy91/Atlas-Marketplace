@@ -1,0 +1,24 @@
+{
+  "name": "atlas-marketplace",
+  "description": "Installable engineering-agent plugins in the Atlas product family.",
+  "plugins": [
+    {
+      "name": "hapatlas",
+      "version": "1.0.0-alpha.1",
+      "description": "Workflow-gated HAPAtlas Alpha v1 control for explicitly selected Carrier HAP projects.",
+      "category": "engineering",
+      "tags": [
+        "carrier-hap",
+        "hvac",
+        "mcp"
+      ],
+      "source": {
+        "source": "github",
+        "repo": "mroshdy91/HAPAtlas-Plugin",
+        "ref": "v1.0.0-alpha.1"
+      },
+      "homepage": "https://github.com/mroshdy91/HAPAtlas-Plugin",
+      "repository": "https://github.com/mroshdy91/HAPAtlas-Plugin"
+    }
+  ]
+}

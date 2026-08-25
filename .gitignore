@@ -1,0 +1,13 @@
+# Marketplace repositories contain catalogs and documentation only.
+/plugins/
+runtime/
+artifacts/
+*.exe
+*.dll
+*.msi
+*.msix
+*.zip
+*.hapatlasdiag
+*.e3a
+*.mdb
+*.dat

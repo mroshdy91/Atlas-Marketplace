@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "name": "atlas-marketplace",
+  "display_name": "Atlas Marketplace",
+  "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
+  "plugins": [
+    {
+      "name": "hapatlas",
+      "product_name": "HAPAtlas",
+      "version": "1.0.0-alpha.1",
+      "repository": "https://github.com/mroshdy91/HAPAtlas-Plugin",
+      "ref": "v1.0.0-alpha.1",
+      "runtime": "external-prerequisite",
+      "platforms": [
+        "windows"
+      ],
+      "status": "alpha"
+    }
+  ]
+}
