@@ -4,8 +4,8 @@
   "plugins": [
     {
       "name": "hapatlas",
-      "version": "1.0.0-alpha.1",
-      "description": "Workflow-gated HAPAtlas Alpha v1 control for explicitly selected Carrier HAP projects.",
+      "version": "1.0.0-alpha.1-private.1",
+      "description": "Workflow-gated HAPAtlas private Alpha control for explicitly selected Carrier HAP projects.",
       "category": "engineering",
       "tags": [
         "carrier-hap",
@@ -15,7 +15,7 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/HAPAtlas-Plugin",
-        "ref": "v1.0.0-alpha.1"
+        "ref": "v1.0.0-alpha.1-private.1"
       },
       "homepage": "https://github.com/mroshdy91/HAPAtlas-Plugin",
       "repository": "https://github.com/mroshdy91/HAPAtlas-Plugin"

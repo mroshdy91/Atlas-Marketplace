@@ -4,11 +4,24 @@ Atlas Marketplace is the public catalog for independently installable engineerin
 
 ## Available plugins
 
-| Plugin | Version | Platform | Runtime |
+| Plugin | Plugin version | Platform | Runtime |
 |---|---:|---|---|
-| [HAPAtlas](https://github.com/mroshdy91/HAPAtlas-Plugin) | `1.0.0-alpha.1` | Windows | Separate signed HAPAtlas product installation required |
+| [HAPAtlas](https://github.com/mroshdy91/HAPAtlas-Plugin) | `1.0.0-alpha.1-private.1` | Windows | Separate unsigned private runtime required |
+
+HAPAtlas is currently a closed private Alpha. Anyone can inspect or add this public marketplace, but only authorized testers with access to the [private runtime prerelease](https://github.com/mroshdy91/HAPAtlas/releases/tag/v1.0.0-alpha.1-private.1) can connect the plugin to Carrier HAP.
 
 Future products such as RevitAtlas, CADAtlas, CodeAtlas, and EliteFireAtlas can be added as independent entries without coupling their versions, runtimes, permissions, or supported application builds.
+
+## Before installing HAPAtlas
+
+Download, verify, extract, and install the separate private runtime by following [HAPAtlas-Plugin runtime instructions](https://github.com/mroshdy91/HAPAtlas-Plugin/blob/v1.0.0-alpha.1-private.1/RUNTIME.md). Restart the agent and confirm both commands succeed:
+
+```powershell
+hapatlas --version
+hapatlas --doctor
+```
+
+Do not create a separate standalone/global HAPAtlas MCP entry. Every marketplace client launches the same bare `hapatlas` command supplied by the runtime installer.
 
 ## Add the marketplace
 
@@ -18,7 +31,7 @@ Future products such as RevitAtlas, CADAtlas, CodeAtlas, and EliteFireAtlas can 
 codex plugin marketplace add mroshdy91/Atlas-Marketplace
 ```
 
-Open `/plugins`, select **Atlas Marketplace**, and install `hapatlas`. Start a new session after installation.
+Open `/plugins`, select **Atlas Marketplace**, and install `hapatlas`. Restart Codex or start a new session afterward.
 
 ### Claude Code
 
@@ -52,20 +65,20 @@ These clients install the individual product package directly. For HAPAtlas, use
 https://github.com/mroshdy91/HAPAtlas-Plugin
 ```
 
-Gemini CLI currently expects an extension manifest at the repository root, so each Atlas product retains its own installable plugin repository.
+Gemini CLI currently expects the extension manifest at the product repository root, so each Atlas product retains its own installable plugin repository.
 
 ## Marketplace model
 
-This repository contains catalogs and documentation only. It does not duplicate plugin skills, MCP definitions, product runtimes, licensed third-party application content, projects, reports, or support packages.
-
-Each catalog entry points to a versioned public plugin repository:
+This repository contains generated catalogs and documentation only. It does not duplicate product skills, MCP definitions, runtimes, licensed third-party content, projects, reports, or support packages.
 
 ```text
-Private canonical product source
-        ↓ generated release
+Private product runtime and source
+        ↓ immutable runtime handoff
 Public <Product>-Plugin repository
-        ↓ versioned marketplace entry
+        ↓ version-pinned marketplace entry
 Atlas-Marketplace
 ```
 
 Choose either this umbrella marketplace or a product-specific marketplace in one client profile. Installing the same product from both sources can create duplicate plugin registrations.
+
+`catalog.json` is the canonical marketplace source. `scripts/generate-marketplaces.ps1` generates every thin client-specific marketplace record from it.

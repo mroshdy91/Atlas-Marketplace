@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "1.0.0-alpha.1"
+    "version": "1.0.0-alpha.1-private.1"
   },
   "plugins": [
     {
@@ -14,10 +14,10 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/HAPAtlas-Plugin",
-        "ref": "v1.0.0-alpha.1"
+        "ref": "v1.0.0-alpha.1-private.1"
       },
-      "description": "Workflow-gated HAPAtlas Alpha v1 control for explicitly selected Carrier HAP projects.",
-      "version": "1.0.0-alpha.1"
+      "description": "Workflow-gated HAPAtlas private Alpha control for explicitly selected Carrier HAP projects.",
+      "version": "1.0.0-alpha.1-private.1"
     }
   ]
 }

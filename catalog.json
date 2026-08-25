@@ -1,20 +1,55 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
+  "catalog_version": "1.0.0-alpha.1-private.1",
+  "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
+  "owner": {
+    "name": "Atlas Engineering",
+    "url": "https://github.com/mroshdy91/Atlas-Marketplace"
+  },
   "plugins": [
     {
       "name": "hapatlas",
       "product_name": "HAPAtlas",
-      "version": "1.0.0-alpha.1",
+      "product_version": "1.0.0-alpha.1",
+      "version": "1.0.0-alpha.1-private.1",
+      "description": "Workflow-gated HAPAtlas private Alpha control for explicitly selected Carrier HAP projects.",
       "repository": "https://github.com/mroshdy91/HAPAtlas-Plugin",
-      "ref": "v1.0.0-alpha.1",
-      "runtime": "external-prerequisite",
+      "source_repo": "mroshdy91/HAPAtlas-Plugin",
+      "ref": "v1.0.0-alpha.1-private.1",
+      "category": "Productivity",
+      "marketplace_category": "engineering",
+      "keywords": [
+        "carrier-hap",
+        "hvac",
+        "mcp"
+      ],
+      "runtime": {
+        "delivery": "private-external-prerequisite",
+        "access": "authorized-private-alpha",
+        "unsigned": true,
+        "release_url": "https://github.com/mroshdy91/HAPAtlas/releases/tag/v1.0.0-alpha.1-private.1",
+        "release_tag": "v1.0.0-alpha.1-private.1",
+        "source_commit": "5a48e0f52f48f3bf3e4667a1ec5ee776b32fd563",
+        "package_implementation": "1.0.0-alpha.1+pkg.4101efa4e717e9bec65e41ac",
+        "zip_sha256": "00f22c0daaa46513f4a3a1b39ccae80193c946dbabab1e923b18377075c75dca"
+      },
+      "capability_guidance": {
+        "source_branch": "codex/client-neutral-evaluation",
+        "source_commit": "87d1656cc18e22263c1e2599a3969cf866014d43",
+        "generated_inventory": "evals/client-neutral/generated-tool-inventory.json",
+        "runtime_contracts": [
+          "space-workflow-v1",
+          "adapter-capabilities",
+          "input-coverage"
+        ]
+      },
       "platforms": [
         "windows"
       ],
-      "status": "alpha"
+      "status": "private-alpha"
     }
   ]
 }
