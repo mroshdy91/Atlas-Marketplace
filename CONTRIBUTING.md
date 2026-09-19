@@ -1,6 +1,8 @@
 # Adding an Atlas plugin
 
-Atlas products are independently versioned and released. A catalog entry is accepted only after its product plugin repository is complete and its runtime delivery path is documented.
+Atlas products are independently versioned and released. An installable catalog entry is accepted only after its product plugin repository is complete and its runtime delivery path is documented.
+
+An upcoming product may appear in the canonical catalog with `status: coming-soon` and `installable: false`. Use `planned_public_repository` and `planned_private_source_repository` for reserved names, and omit release refs, commits and download links. Document dependencies and application-version targets without claiming qualification. The generator excludes these entries from every installable client catalog. To enable installation later, publish and verify the package first, replace the planned metadata with full pinned release metadata, and change its status to the appropriate released stage.
 
 For each product release:
 

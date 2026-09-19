@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "1.0.0-alpha.1-private.2"
+    "version": "1.0.0-alpha.1-private.3"
   },
   "plugins": [
     {

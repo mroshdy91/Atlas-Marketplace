@@ -10,7 +10,27 @@ Atlas Marketplace is the public catalog for independently installable engineerin
 
 HAPAtlas is currently a closed private Alpha. Anyone can inspect or add this public marketplace, but only authorized testers with access to the [private runtime prerelease](https://github.com/mroshdy91/HAPAtlas/releases/tag/v1.0.0-alpha.1-private.1) can connect the plugin to Carrier HAP.
 
-Future products such as RevitAtlas, CADAtlas, CodeAtlas, and EliteFireAtlas can be added as independent entries without coupling their versions, runtimes, permissions, or supported application builds.
+## Coming soon: Atlas for Revit
+
+| Plugin | Purpose | Dependency | Revit release targets |
+|---|---|---|---|
+| **Atlas Core** (`atlas-core`) | Shared Revit connection, sessions, work identity, inspection, review, recovery and delivery | Installs the shared Atlas Revit runtime | 2025 and 2026 |
+| **Atlas Family** (`atlas-family`) | Create, edit and verify loadable families across disciplines | Atlas Core | 2025 and 2026 |
+
+Both plugins are now included in `catalog.json` as **coming soon**, not yet installable public releases. Their public package repositories and version pins have not been published. The generated client catalogs retain only released entries, avoiding installation links to missing packages. Revit 2025 and 2026 are release targets; each version requires its own qualification before support is advertised.
+
+Core and Family share one broker and one matching native engine per running Revit process. Family adds its focused tools and skill; it does not install a second engine or broker. HAPAtlas remains a separate product with its own runtime.
+
+The planned repository pairs follow the existing HAPAtlas pattern:
+
+| Product | Public distribution repository | Private source repository |
+|---|---|---|
+| Atlas Core | `mroshdy91/Atlas-Core-Plugin` | `mroshdy91/Atlas-Core` |
+| Atlas Family | `mroshdy91/Atlas-Family-Plugin` | `mroshdy91/Atlas-Family` |
+
+These are planned repository names, not current download locations. Public packages contain client manifests, skills and release documentation; private implementation source and development evidence remain separate. Core will distribute the shared compiled runtime after qualification.
+
+Other Atlas products can be added independently. Plugins that share a runtime declare that dependency and compatible versions explicitly.
 
 ## Before installing HAPAtlas
 

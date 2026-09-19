@@ -1,8 +1,8 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
-  "catalog_version": "1.0.0-alpha.1-private.2",
+  "catalog_version": "1.0.0-alpha.1-private.3",
   "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
   "owner": {
@@ -51,6 +51,72 @@
         "windows"
       ],
       "status": "private-alpha"
+    },
+    {
+      "name": "atlas-core",
+      "product_name": "Atlas Core",
+      "description": "Shared Revit connection, sessions, work identity, inspection, review, recovery and delivery.",
+      "category": "Productivity",
+      "marketplace_category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "status": "coming-soon",
+      "installable": false,
+      "planned_public_repository": "mroshdy91/Atlas-Core-Plugin",
+      "planned_private_source_repository": "mroshdy91/Atlas-Core",
+      "requires_plugins": [],
+      "revit": {
+        "release_targets": [
+          "2025",
+          "2026"
+        ],
+        "qualified_public_versions": []
+      },
+      "runtime": {
+        "owner_plugin": "atlas-core",
+        "delivery": "not-published",
+        "model": "shared broker; version-matched native engine per Revit process"
+      }
+    },
+    {
+      "name": "atlas-family",
+      "product_name": "Atlas Family",
+      "description": "Native loadable-family creation, editing and verification across disciplines.",
+      "category": "Productivity",
+      "marketplace_category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "status": "coming-soon",
+      "installable": false,
+      "planned_public_repository": "mroshdy91/Atlas-Family-Plugin",
+      "planned_private_source_repository": "mroshdy91/Atlas-Family",
+      "requires_plugins": [
+        "atlas-core"
+      ],
+      "revit": {
+        "release_targets": [
+          "2025",
+          "2026"
+        ],
+        "qualified_public_versions": []
+      },
+      "runtime": {
+        "owner_plugin": "atlas-core",
+        "delivery": "not-published",
+        "model": "shared broker; version-matched native engine per Revit process"
+      }
     }
   ]
 }
