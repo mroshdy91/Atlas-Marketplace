@@ -131,8 +131,13 @@ $zcodePlugins = @(
 )
 Write-JsonFile 'marketplace.json' ([ordered]@{
     name = $catalog.name
+    owner = [ordered]@{ name = $catalog.owner.name; url = $catalog.owner.url }
     description = $catalog.description
     plugins = $zcodePlugins
 })
 
 Write-Host "Catalog: $($catalog.plugins.Count) plugins; generated $($installablePlugins.Count) installable record(s) from $($catalog.catalog_version)."
+
+# Cursor custom marketplace follows the Claude-compatible external Git source form.
+$cursor = Get-Content -LiteralPath (Join-Path $repoRoot '.claude-plugin/marketplace.json') -Raw | ConvertFrom-Json
+Write-JsonFile '.cursor-plugin/marketplace.json' $cursor

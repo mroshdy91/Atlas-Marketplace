@@ -13,7 +13,7 @@ $checks=0
 function Check([bool]$condition,[string]$message){if(!$condition){throw $message};$script:checks++}
 Write-Catalog $catalog
 & $generator -CatalogPath $inputPath
-$paths=@('.agents/plugins/marketplace.json','.claude-plugin/marketplace.json','.github/plugin/marketplace.json','marketplace.json')
+$paths=@('.agents/plugins/marketplace.json','.claude-plugin/marketplace.json','.github/plugin/marketplace.json','marketplace.json','.cursor-plugin/marketplace.json')
 foreach($path in $paths){
  $generated=Get-Content -LiteralPath (Join-Path $fixture $path) -Raw|ConvertFrom-Json
  $expected=@($catalog.plugins|Where-Object status -ne 'coming-soon')
@@ -21,6 +21,8 @@ foreach($path in $paths){
  Check ((@($generated.plugins.name|Sort-Object) -join ',') -eq (@($expected.name|Sort-Object) -join ',')) "Wrong plugin identities in $path"
  Check ($generated.plugins[0].source.ref -eq $catalog.plugins[0].ref) "HAPAtlas pin changed in $path"
 }
+$rootManifest=Get-Content -LiteralPath (Join-Path $fixture 'marketplace.json') -Raw|ConvertFrom-Json
+Check (![string]::IsNullOrWhiteSpace($rootManifest.owner.name)) 'Copilot/ZCode root owner missing'
 $before=(Get-FileHash -LiteralPath (Join-Path $fixture $paths[0])).Hash
 $bad=$catalog|ConvertTo-Json -Depth 30|ConvertFrom-Json
 $bad.plugins[1].status='public-beta'

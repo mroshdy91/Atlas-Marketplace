@@ -33,7 +33,7 @@ Marketplace installation supplies the plugin. The one-time Windows setup supplie
 
 ### Scope
 
-Version **0.1.0-beta.1** is a scoped public beta. Qualification covers specific native family and drawing workflows on both Revit versions; it does not claim every Revit operation, every family type or a completed 15-delivery production benchmark. Review [qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RELEASE-READINESS.md). Ordinary drawing edits preserve existing issue history; formal revision/cloud authoring and schedule authoring remain outside the exposed documentation scope.
+Client packages **0.1.0-beta.3** reuse shared native runtime **0.1.0-beta.1**. This is a scoped public beta. Qualification covers specific native family and drawing workflows on both Revit versions; it does not claim every Revit operation, every family type or a completed 15-delivery production benchmark. Review [qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RELEASE-READINESS.md). Ordinary drawing edits preserve existing issue history; formal revision/cloud authoring and schedule authoring remain outside the exposed documentation scope.
 
 ## HAPAtlas
 
@@ -41,6 +41,10 @@ Version **0.1.0-beta.1** is a scoped public beta. Qualification covers specific 
 
 ## Other clients and repository layout
 
-Generated catalogs are provided for supported marketplace formats. This beta's installed-client qualification uses Codex; other clients need compatible HTTP MCP authentication, skill loading and a local Windows shell for agent-assisted setup.
+Use [the client installation guide and evidence table](CLIENTS.md) for Codex, Claude Code, ZCode, Cursor, Copilot, VS Code, Factory, Qwen, Gemini, Kiro, Hermes, OpenClaw and other Agent Plugins clients. Antigravity and MCP-only clients have explicit exports. Each route states what was actually tested; adding a Git marketplace is not supported by every product or plan. Curated vendor galleries require their own acceptance.
+
+Claude Code, Gemini and Qwen passed four-plugin connection checks; Codex retains native two-version evidence and passes updated installed-client checks. Copilot/ZCode installation and discovery passed, with remaining live-test limits documented. Other researched formats remain unqualified in their individual clients. Local Windows execution is required. Cloud-only agents cannot reach Revit merely by adding this marketplace.
+
+Non-HTTP clients use one short-lived connection process per active Revit plugin. All still share one broker and the same version-matched Revit engine. Credentials are provisioned by Core and never pasted into client configuration.
 
 `catalog.json` is the source of truth. `scripts/generate-marketplaces.ps1` generates the client catalogs and rejects unpinned releases. The four public Revit plugin repositories share one private implementation repository. No engine source, credentials, private evaluations, customer models or Autodesk binaries are included in public distribution.
