@@ -68,7 +68,7 @@
       ],
       "status": "coming-soon",
       "installable": false,
-      "planned_public_repository": "mroshdy91/Atlas-Core-Plugin",
+      "planned_public_repository": "mroshdy91/RevitAtlas.Core-Plugin",
       "planned_private_source_repository": "mroshdy91/Atlas-Core",
       "requires_plugins": [],
       "revit": {
@@ -82,7 +82,9 @@
         "owner_plugin": "atlas-core",
         "delivery": "not-published",
         "model": "shared broker; version-matched native engine per Revit process"
-      }
+      },
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin",
+      "public_package_status": "client-content-published-runtime-release-draft"
     },
     {
       "name": "atlas-family",
@@ -100,7 +102,7 @@
       ],
       "status": "coming-soon",
       "installable": false,
-      "planned_public_repository": "mroshdy91/Atlas-Family-Plugin",
+      "planned_public_repository": "mroshdy91/RevitAtlas.Family-Plugin",
       "planned_private_source_repository": "mroshdy91/Atlas-Family",
       "requires_plugins": [
         "atlas-core"
@@ -116,7 +118,9 @@
         "owner_plugin": "atlas-core",
         "delivery": "not-published",
         "model": "shared broker; version-matched native engine per Revit process"
-      }
+      },
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin",
+      "public_package_status": "client-content-published-runtime-release-draft"
     }
   ]
 }
