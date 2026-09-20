@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
-  "catalog_version": "1.0.0-alpha.1-private.3",
+  "catalog_version": "1.0.0-beta.1",
   "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
   "owner": {
@@ -55,7 +55,13 @@
     {
       "name": "atlas-core",
       "product_name": "Atlas Core",
-      "description": "Shared Revit connection, sessions, work identity, inspection, review, recovery and delivery.",
+      "product_version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.1",
+      "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin",
+      "source_repo": "mroshdy91/RevitAtlas.Core-Plugin",
+      "ref": "v0.1.0-beta.1",
+      "commit": "027702c6836722366363661b6ff7528c7ae5a950",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -66,30 +72,40 @@
       "platforms": [
         "windows"
       ],
-      "status": "coming-soon",
-      "installable": false,
-      "planned_public_repository": "mroshdy91/RevitAtlas.Core-Plugin",
-      "planned_private_source_repository": "mroshdy91/Atlas-Core",
+      "status": "public-beta",
+      "installable": true,
       "requires_plugins": [],
       "revit": {
         "release_targets": [
           "2025",
           "2026"
         ],
-        "qualified_public_versions": []
+        "qualified_public_versions": [
+          "2025",
+          "2026"
+        ],
+        "qualification": "Scoped public beta; see plugin RELEASE-READINESS.md"
       },
       "runtime": {
         "owner_plugin": "atlas-core",
-        "delivery": "not-published",
-        "model": "shared broker; version-matched native engine per Revit process"
+        "delivery": "public-compiled-release",
+        "model": "one shared broker; version-matched engine per Revit process",
+        "unsigned": true,
+        "release_url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/releases/tag/v0.1.0-beta.1",
+        "agent_setup": "Ask your agent to set up RevitAtlas and check its connection to Revit."
       },
-      "repository": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin",
-      "public_package_status": "client-content-published-runtime-release-draft"
+      "terms": "Free personal and commercial use; proprietary implementation source."
     },
     {
       "name": "atlas-family",
       "product_name": "Atlas Family",
-      "description": "Native loadable-family creation, editing and verification across disciplines.",
+      "product_version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.1",
+      "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin",
+      "source_repo": "mroshdy91/RevitAtlas.Family-Plugin",
+      "ref": "v0.1.0-beta.1",
+      "commit": "cb857a39a3d48850a40a2c3cab2bbca258895950",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -100,10 +116,8 @@
       "platforms": [
         "windows"
       ],
-      "status": "coming-soon",
-      "installable": false,
-      "planned_public_repository": "mroshdy91/RevitAtlas.Family-Plugin",
-      "planned_private_source_repository": "mroshdy91/Atlas-Family",
+      "status": "public-beta",
+      "installable": true,
       "requires_plugins": [
         "atlas-core"
       ],
@@ -112,15 +126,113 @@
           "2025",
           "2026"
         ],
-        "qualified_public_versions": []
+        "qualified_public_versions": [
+          "2025",
+          "2026"
+        ],
+        "qualification": "Scoped public beta; see plugin RELEASE-READINESS.md"
       },
       "runtime": {
         "owner_plugin": "atlas-core",
-        "delivery": "not-published",
-        "model": "shared broker; version-matched native engine per Revit process"
+        "delivery": "public-compiled-release",
+        "model": "one shared broker; version-matched engine per Revit process",
+        "unsigned": true,
+        "release_url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/releases/tag/v0.1.0-beta.1",
+        "agent_setup": "Ask your agent to set up RevitAtlas and check its connection to Revit."
       },
-      "repository": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin",
-      "public_package_status": "client-content-published-runtime-release-draft"
+      "terms": "Free personal and commercial use; proprietary implementation source."
+    },
+    {
+      "name": "atlas-sheets",
+      "product_name": "Atlas Sheets",
+      "product_version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.1",
+      "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin",
+      "source_repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
+      "ref": "v0.1.0-beta.1",
+      "commit": "b73f11ad8f940fa040dec5aafd77a95a985b5def",
+      "category": "Productivity",
+      "marketplace_category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "status": "public-beta",
+      "installable": true,
+      "requires_plugins": [
+        "atlas-core"
+      ],
+      "revit": {
+        "release_targets": [
+          "2025",
+          "2026"
+        ],
+        "qualified_public_versions": [
+          "2025",
+          "2026"
+        ],
+        "qualification": "Scoped public beta; see plugin RELEASE-READINESS.md"
+      },
+      "runtime": {
+        "owner_plugin": "atlas-core",
+        "delivery": "public-compiled-release",
+        "model": "one shared broker; version-matched engine per Revit process",
+        "unsigned": true,
+        "release_url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/releases/tag/v0.1.0-beta.1",
+        "agent_setup": "Ask your agent to set up RevitAtlas and check its connection to Revit."
+      },
+      "terms": "Free personal and commercial use; proprietary implementation source."
+    },
+    {
+      "name": "atlas-annotations",
+      "product_name": "Atlas Annotations",
+      "product_version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.1",
+      "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin",
+      "source_repo": "mroshdy91/RevitAtlas.Annotations-Plugin",
+      "ref": "v0.1.0-beta.1",
+      "commit": "6a868c161c71627786cc3f0dd7960ada3ffed41a",
+      "category": "Productivity",
+      "marketplace_category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ],
+      "platforms": [
+        "windows"
+      ],
+      "status": "public-beta",
+      "installable": true,
+      "requires_plugins": [
+        "atlas-core"
+      ],
+      "revit": {
+        "release_targets": [
+          "2025",
+          "2026"
+        ],
+        "qualified_public_versions": [
+          "2025",
+          "2026"
+        ],
+        "qualification": "Scoped public beta; see plugin RELEASE-READINESS.md"
+      },
+      "runtime": {
+        "owner_plugin": "atlas-core",
+        "delivery": "public-compiled-release",
+        "model": "one shared broker; version-matched engine per Revit process",
+        "unsigned": true,
+        "release_url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/releases/tag/v0.1.0-beta.1",
+        "agent_setup": "Ask your agent to set up RevitAtlas and check its connection to Revit."
+      },
+      "terms": "Free personal and commercial use; proprietary implementation source."
     }
   ]
 }

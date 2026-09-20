@@ -16,18 +16,24 @@ Write-Catalog $catalog
 $paths=@('.agents/plugins/marketplace.json','.claude-plugin/marketplace.json','.github/plugin/marketplace.json','marketplace.json')
 foreach($path in $paths){
  $generated=Get-Content -LiteralPath (Join-Path $fixture $path) -Raw|ConvertFrom-Json
- Check (@($generated.plugins).Count -eq 1 -and $generated.plugins[0].name -eq 'hapatlas') "Unreleased entries leaked into $path"
+ $expected=@($catalog.plugins|Where-Object status -ne 'coming-soon')
+ Check (@($generated.plugins).Count -eq $expected.Count -and $generated.plugins[0].name -eq 'hapatlas') "Released entries differ in $path"
+ Check ((@($generated.plugins.name|Sort-Object) -join ',') -eq (@($expected.name|Sort-Object) -join ',')) "Wrong plugin identities in $path"
  Check ($generated.plugins[0].source.ref -eq $catalog.plugins[0].ref) "HAPAtlas pin changed in $path"
 }
 $before=(Get-FileHash -LiteralPath (Join-Path $fixture $paths[0])).Hash
 $bad=$catalog|ConvertTo-Json -Depth 30|ConvertFrom-Json
 $bad.plugins[1].status='public-beta'
+$bad.plugins[1].commit=$null
 Write-Catalog $bad
 $rejected=$false
 try{& $generator -CatalogPath $inputPath}catch{if($_.Exception.Message -like 'PINNED_RELEASE_REQUIRED:*'){$rejected=$true}else{throw}}
 Check $rejected 'Unpinned release was accepted'
 Check ((Get-FileHash -LiteralPath (Join-Path $fixture $paths[0])).Hash -eq $before) 'Rejected catalog partially rewrote outputs'
 $bad=$catalog|ConvertTo-Json -Depth 30|ConvertFrom-Json
+$bad.plugins[1].status='coming-soon'
+$bad.plugins[1].ref=$null
+$bad.plugins[1].commit=$null
 $bad.plugins[1].installable=$true
 Write-Catalog $bad
 $rejected=$false

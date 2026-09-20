@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "1.0.0-alpha.1-private.3"
+    "version": "1.0.0-beta.1"
   },
   "plugins": [
     {
@@ -24,6 +24,74 @@
       "keywords": [
         "carrier-hap",
         "hvac",
+        "mcp"
+      ]
+    },
+    {
+      "name": "atlas-core",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin.git",
+        "ref": "v0.1.0-beta.1",
+        "sha": "027702c6836722366363661b6ff7528c7ae5a950"
+      },
+      "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
+      "version": "0.1.0-beta.1",
+      "category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ]
+    },
+    {
+      "name": "atlas-family",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin.git",
+        "ref": "v0.1.0-beta.1",
+        "sha": "cb857a39a3d48850a40a2c3cab2bbca258895950"
+      },
+      "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
+      "version": "0.1.0-beta.1",
+      "category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ]
+    },
+    {
+      "name": "atlas-sheets",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin.git",
+        "ref": "v0.1.0-beta.1",
+        "sha": "b73f11ad8f940fa040dec5aafd77a95a985b5def"
+      },
+      "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
+      "version": "0.1.0-beta.1",
+      "category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
+        "mcp"
+      ]
+    },
+    {
+      "name": "atlas-annotations",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin.git",
+        "ref": "v0.1.0-beta.1",
+        "sha": "6a868c161c71627786cc3f0dd7960ada3ffed41a"
+      },
+      "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
+      "version": "0.1.0-beta.1",
+      "category": "engineering",
+      "keywords": [
+        "revit",
+        "bim",
         "mcp"
       ]
     }
