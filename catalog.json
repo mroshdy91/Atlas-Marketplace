@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
-  "catalog_version": "1.0.0-beta.3",
+  "catalog_version": "1.0.0-beta.4",
   "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
   "owner": {
@@ -55,13 +55,13 @@
     {
       "name": "atlas-core",
       "product_name": "Atlas Core",
-      "product_version": "0.1.0-beta.3",
-      "version": "0.1.0-beta.3",
+      "product_version": "0.1.0-beta.4",
+      "version": "0.1.0-beta.4",
       "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin",
       "source_repo": "mroshdy91/RevitAtlas.Core-Plugin",
-      "ref": "v0.1.0-beta.3",
-      "commit": "32f28b63c62d7864e8494096cc7fae17e766c989",
+      "ref": "v0.1.0-beta.4",
+      "commit": "7aab0510bdc19845b192a66a7ca7bbc0a00c2382",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -96,7 +96,7 @@
       },
       "terms": "Free personal and commercial use; proprietary implementation source.",
       "clients": {
-        "guide": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.3/CLIENTS.md",
+        "guide": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.4/CLIENTS.md",
         "universal_live_qualification": false,
         "runtime_version": "0.1.0-beta.1"
       }
@@ -104,13 +104,13 @@
     {
       "name": "atlas-family",
       "product_name": "Atlas Family",
-      "product_version": "0.1.0-beta.3",
-      "version": "0.1.0-beta.3",
+      "product_version": "0.1.0-beta.4",
+      "version": "0.1.0-beta.4",
       "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin",
       "source_repo": "mroshdy91/RevitAtlas.Family-Plugin",
-      "ref": "v0.1.0-beta.3",
-      "commit": "a2bc55d4c7a9734f79702ba9017a776ebfebd719",
+      "ref": "v0.1.0-beta.4",
+      "commit": "2f4e96103184b01e24b1929557e8aa8b3a1b68a3",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -147,7 +147,7 @@
       },
       "terms": "Free personal and commercial use; proprietary implementation source.",
       "clients": {
-        "guide": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin/blob/v0.1.0-beta.3/CLIENTS.md",
+        "guide": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin/blob/v0.1.0-beta.4/CLIENTS.md",
         "universal_live_qualification": false,
         "runtime_version": "0.1.0-beta.1"
       }
@@ -155,13 +155,13 @@
     {
       "name": "atlas-sheets",
       "product_name": "Atlas Sheets",
-      "product_version": "0.1.0-beta.3",
-      "version": "0.1.0-beta.3",
+      "product_version": "0.1.0-beta.4",
+      "version": "0.1.0-beta.4",
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin",
       "source_repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-      "ref": "v0.1.0-beta.3",
-      "commit": "0f506011930817918889c709e6c9dc733f99d0a3",
+      "ref": "v0.1.0-beta.4",
+      "commit": "eeda386f63e750ae80a634a04dba03b512448f59",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -198,7 +198,7 @@
       },
       "terms": "Free personal and commercial use; proprietary implementation source.",
       "clients": {
-        "guide": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin/blob/v0.1.0-beta.3/CLIENTS.md",
+        "guide": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin/blob/v0.1.0-beta.4/CLIENTS.md",
         "universal_live_qualification": false,
         "runtime_version": "0.1.0-beta.1"
       }
@@ -206,13 +206,13 @@
     {
       "name": "atlas-annotations",
       "product_name": "Atlas Annotations",
-      "product_version": "0.1.0-beta.3",
-      "version": "0.1.0-beta.3",
+      "product_version": "0.1.0-beta.4",
+      "version": "0.1.0-beta.4",
       "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin",
       "source_repo": "mroshdy91/RevitAtlas.Annotations-Plugin",
-      "ref": "v0.1.0-beta.3",
-      "commit": "be7cf406de9f2e6b76a77985cf7e29d2acd40381",
+      "ref": "v0.1.0-beta.4",
+      "commit": "fc9aa08958213313d59004ae5ddc60d8696dfe16",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -249,7 +249,7 @@
       },
       "terms": "Free personal and commercial use; proprietary implementation source.",
       "clients": {
-        "guide": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin/blob/v0.1.0-beta.3/CLIENTS.md",
+        "guide": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin/blob/v0.1.0-beta.4/CLIENTS.md",
         "universal_live_qualification": false,
         "runtime_version": "0.1.0-beta.1"
       }

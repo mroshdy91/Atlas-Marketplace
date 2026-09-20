@@ -33,7 +33,7 @@ Marketplace installation supplies the plugin. The one-time Windows setup supplie
 
 ### Scope
 
-Client packages **0.1.0-beta.3** reuse shared native runtime **0.1.0-beta.1**. This is a scoped public beta. Qualification covers specific native family and drawing workflows on both Revit versions; it does not claim every Revit operation, every family type or a completed 15-delivery production benchmark. Review [qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RELEASE-READINESS.md). Ordinary drawing edits preserve existing issue history; formal revision/cloud authoring and schedule authoring remain outside the exposed documentation scope.
+Client packages **0.1.0-beta.4** reuse shared native runtime **0.1.0-beta.1**. This is a scoped public beta. Qualification covers specific native family and drawing workflows on both Revit versions; it does not claim every Revit operation, every family type or a completed 15-delivery production benchmark. Review [qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RELEASE-READINESS.md). Ordinary drawing edits preserve existing issue history; formal revision/cloud authoring and schedule authoring remain outside the exposed documentation scope.
 
 ## HAPAtlas
 
