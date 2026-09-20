@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "1.0.0-beta.1"
+    "version": "1.0.0-beta.2"
   },
   "plugins": [
     {
@@ -44,10 +44,10 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-        "ref": "v0.1.0-beta.1"
+        "ref": "v0.1.0-beta.2"
       },
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
-      "version": "0.1.0-beta.1"
+      "version": "0.1.0-beta.2"
     },
     {
       "name": "atlas-annotations",

@@ -58,7 +58,7 @@
     },
     {
       "name": "atlas-sheets",
-      "version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.2",
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
       "category": "engineering",
       "tags": [
@@ -69,7 +69,7 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-        "ref": "v0.1.0-beta.1"
+        "ref": "v0.1.0-beta.2"
       },
       "homepage": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin"

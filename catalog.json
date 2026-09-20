@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "name": "atlas-marketplace",
   "display_name": "Atlas Marketplace",
-  "catalog_version": "1.0.0-beta.1",
+  "catalog_version": "1.0.0-beta.2",
   "description": "Installable engineering-agent plugins in the Atlas product family.",
   "repository": "https://github.com/mroshdy91/Atlas-Marketplace",
   "owner": {
@@ -145,13 +145,13 @@
     {
       "name": "atlas-sheets",
       "product_name": "Atlas Sheets",
-      "product_version": "0.1.0-beta.1",
-      "version": "0.1.0-beta.1",
+      "product_version": "0.1.0-beta.2",
+      "version": "0.1.0-beta.2",
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin",
       "source_repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-      "ref": "v0.1.0-beta.1",
-      "commit": "b73f11ad8f940fa040dec5aafd77a95a985b5def",
+      "ref": "v0.1.0-beta.2",
+      "commit": "4d1be53ac09a1d6de3e0b7ad4331705d9e288a0c",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
