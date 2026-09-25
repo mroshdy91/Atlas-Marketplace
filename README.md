@@ -1,50 +1,50 @@
 # Atlas Marketplace
 
-Add this marketplace once, then install the engineering tools you need.
+Install the Atlas engineering plugins from this existing Git marketplace.
 
-## RevitAtlas public beta
+## Atlas for Revit — 2.0.0-alpha.1
 
-**Free for personal and commercial use. Windows x64, Revit 2025 and 2026.** The implementation source is private; public repositories supply plugins, guidance, setup helpers and compiled releases.
+**Windows x64, licensed Revit 2025 or 2026. Free personal and commercial use under the included terms.** The implementation source remains private. Public repositories contain client plugins, skills, installation helpers and compiled runtime releases.
 
-| Plugin | Purpose | Requires |
+| Plugin | Purpose | Dependency |
 |---|---|---|
-| [Atlas Core](https://github.com/mroshdy91/RevitAtlas.Core-Plugin) | Connection, work identity, inspection, review, recovery and delivery | Licensed Revit |
-| [Atlas Family](https://github.com/mroshdy91/RevitAtlas.Family-Plugin) | Native loadable-family authoring and editing | Atlas Core |
-| [Atlas Sheets](https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin) | Drawing views, sheets and layout | Atlas Core |
-| [Atlas Annotations](https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin) | Tags, dimensions, text and annotations | Atlas Core |
+| [Atlas Core](https://github.com/mroshdy91/RevitAtlas.Core-Plugin) | Connection, work ownership, inspection, execution plans, checked scripting, review and delivery | Licensed Revit |
+| [Atlas Family](https://github.com/mroshdy91/RevitAtlas.Family-Plugin) | Native family geometry, parameters, constraints and connectors | Atlas Core |
+| [Atlas Sheets](https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin) | Views, sheets and layout | Atlas Core |
+| [Atlas Annotations](https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin) | Tags, dimensions, text and detail content | Atlas Core |
 
-All four use **one shared Windows runtime**, distributed by Core. Specialists do not launch separate brokers or install separate engines. Sheets and Annotations can work on existing project content without Family.
+The four plugins expose **26 tools** and share one Windows runtime. Core installs the matching engine for each installed Revit year. Specialists do not install separate engines. The legacy RevitAtlas MCP is not required.
 
-### Install in Codex
+### Install or update in Codex
 
-Add `mroshdy91/Atlas-Marketplace` through the plugin marketplace interface, or run:
+Add this marketplace through the plugin marketplace interface, or use:
 
 ```text
 codex plugin marketplace add mroshdy91/Atlas-Marketplace
 ```
 
-Install **atlas-core** plus the specialists you need. Then ask your agent:
+Install **atlas-core** and the specialists you need. Then ask your agent:
 
-> Set up RevitAtlas and check its connection to Revit.
+> Set up or update Atlas for Revit and verify its connection.
 
-The agent follows the packaged Core skill, downloads the pinned public runtime, verifies its hashes and configures the local connection. You do not need a private-repository invitation, SDK, manual token entry or copied installation commands. Licensed Revit must already be installed. Save and close Revit when setup requests it; restart your AI client once if requested, then open Revit.
+The Core helper downloads the pinned [2.0.0-alpha.1 runtime](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/releases/tag/v2.0.0-alpha.1), verifies its hashes, and configures the local connection. No GitHub account, private-source access, SDK or manual token copying is required. Save and close Revit normally when setup requests it. Reconnect or restart the AI client if requested, then open Revit.
 
-Marketplace installation supplies the plugin. The one-time Windows setup supplies the native Revit integration. See [runtime installation](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RUNTIME.md). Unsigned binaries remain subject to Windows and organization security policy.
+**Upgrading from 0.1.0-beta.4:** update Core and all installed specialists together. The new v2 clients require the matching 2.0.0-alpha.1 runtime; the old beta runtime cannot serve the new interface. Existing credentials are preserved. Keep the installer receipt for rollback. Older immutable release tags and runtime assets remain available.
 
-### Scope
+### Qualified scope and limits
 
-Client packages **0.1.0-beta.4** reuse shared native runtime **0.1.0-beta.1**. This is a scoped public beta. Qualification covers specific native family and drawing workflows on both Revit versions; it does not claim every Revit operation, every family type or a completed 15-delivery production benchmark. Review [qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v0.1.0-beta.1/RELEASE-READINESS.md). Ordinary drawing edits preserve existing issue history; formal revision/cloud authoring and schedule authoring remain outside the exposed documentation scope.
+This is a scoped **alpha**, not completion of the Grand Refactor or universal family qualification. Read the [exact qualification and limitations](https://github.com/mroshdy91/RevitAtlas.Core-Plugin/blob/v2.0.0-alpha.1/RELEASE-READINESS.md). Available actions exceed tested engineering scenarios; every delivered family still needs its own requirements, geometry and visual verification.
+
+Revit 2026 currently has the qualified Mark-tag starter only. Recipe discovery does not qualify every recipe's execution. Checkpointed execution plans are enabled; single-document atomic plans are not enabled in this release. General MEP is outside these four plugins. Broader migration, recovery, performance and engineering-corpus work remains on the roadmap. The binaries are unsigned and remain subject to local Windows and organization policy.
+
+### Other clients
+
+See [client routes and evidence](CLIENTS.md). Compatible local clients use packaged connection formats or explicit exports. All connect to the same local Windows runtime. Installing a plugin in a cloud-only host cannot connect it to local Revit.
 
 ## HAPAtlas
 
-[HAPAtlas](https://github.com/mroshdy91/HAPAtlas-Plugin), version **1.0.0-alpha.1-private.1**, remains a separate Carrier HAP product with its existing private-alpha runtime and access requirements. Its release pin is unchanged. Follow [HAPAtlas runtime instructions](https://github.com/mroshdy91/HAPAtlas-Plugin/blob/v1.0.0-alpha.1-private.1/RUNTIME.md). RevitAtlas setup does not install HAPAtlas.
+[HAPAtlas](https://github.com/mroshdy91/HAPAtlas-Plugin) remains a separate Carrier HAP product at **1.0.0-alpha.1-private.1**, with its existing private-alpha runtime and access requirements. Its marketplace entry and immutable release pin are unchanged. Atlas for Revit setup does not install HAPAtlas.
 
-## Other clients and repository layout
+## Repository layout
 
-Use [the client installation guide and evidence table](CLIENTS.md) for Codex, Claude Code, ZCode, Cursor, Copilot, VS Code, Factory, Qwen, Gemini, Kiro, Hermes, OpenClaw and other Agent Plugins clients. Antigravity and MCP-only clients have explicit exports. Each route states what was actually tested; adding a Git marketplace is not supported by every product or plan. Curated vendor galleries require their own acceptance.
-
-Claude Code, Gemini and Qwen passed four-plugin connection checks; Codex retains native two-version evidence and passes updated installed-client checks. Copilot/ZCode installation and discovery passed, with remaining live-test limits documented. Other researched formats remain unqualified in their individual clients. Local Windows execution is required. Cloud-only agents cannot reach Revit merely by adding this marketplace.
-
-Non-HTTP clients use one short-lived connection process per active Revit plugin. All still share one broker and the same version-matched Revit engine. Credentials are provisioned by Core and never pasted into client configuration.
-
-`catalog.json` is the source of truth. `scripts/generate-marketplaces.ps1` generates the client catalogs and rejects unpinned releases. The four public Revit plugin repositories share one private implementation repository. No engine source, credentials, private evaluations, customer models or Autodesk binaries are included in public distribution.
+`catalog.json` owns the release pins. `scripts/generate-marketplaces.ps1` generates client-specific catalogs and rejects unpinned releases. The four public Revit plugin repositories share one private implementation repository. Public payloads exclude private evaluations, customer models, credentials and Autodesk API/template binaries.

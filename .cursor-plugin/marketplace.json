@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "1.0.0-beta.4"
+    "version": "2.0.0-alpha.1"
   },
   "plugins": [
     {
@@ -32,11 +32,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin.git",
-        "ref": "v0.1.0-beta.4",
-        "sha": "7aab0510bdc19845b192a66a7ca7bbc0a00c2382"
+        "ref": "v2.0.0-alpha.1",
+        "sha": "4c2628541aa612a40fbf80adc08efc9ea95232b1"
       },
       "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
-      "version": "0.1.0-beta.4",
+      "version": "2.0.0-alpha.1",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -49,11 +49,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin.git",
-        "ref": "v0.1.0-beta.4",
-        "sha": "2f4e96103184b01e24b1929557e8aa8b3a1b68a3"
+        "ref": "v2.0.0-alpha.1",
+        "sha": "4eb47ebba8034b2413299c2c0d15f61ec16c680f"
       },
       "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
-      "version": "0.1.0-beta.4",
+      "version": "2.0.0-alpha.1",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -66,11 +66,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin.git",
-        "ref": "v0.1.0-beta.4",
-        "sha": "eeda386f63e750ae80a634a04dba03b512448f59"
+        "ref": "v2.0.0-alpha.1",
+        "sha": "f42523fd642c90811e985e4dd283195077804765"
       },
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
-      "version": "0.1.0-beta.4",
+      "version": "2.0.0-alpha.1",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -83,11 +83,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin.git",
-        "ref": "v0.1.0-beta.4",
-        "sha": "fc9aa08958213313d59004ae5ddc60d8696dfe16"
+        "ref": "v2.0.0-alpha.1",
+        "sha": "6d7b340052bdffe4a7425e6ccd3fb6d20cc5d06b"
       },
       "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
-      "version": "0.1.0-beta.4",
+      "version": "2.0.0-alpha.1",
       "category": "engineering",
       "keywords": [
         "revit",
