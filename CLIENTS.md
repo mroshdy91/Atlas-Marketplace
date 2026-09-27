@@ -1,6 +1,6 @@
 # Client installation and connection
 
-The current Revit plugin and runtime release is **2.0.0-alpha.1**. Update Core and installed specialists together. Each public plugin repository includes its client manifests and an exact `CLIENTS.md` for this release.
+The current Revit plugin and runtime release is **2.0.0-alpha.2**. Update Core and installed specialists together. Each public plugin repository includes its client manifests and an exact `CLIENTS.md` for this release.
 
 | Client format | Packaged route | Qualification statement |
 |---|---|---|

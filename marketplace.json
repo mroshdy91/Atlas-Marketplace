@@ -26,7 +26,7 @@
     },
     {
       "name": "atlas-core",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
       "category": "engineering",
       "tags": [
@@ -37,14 +37,14 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Core-Plugin",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "homepage": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin"
     },
     {
       "name": "atlas-family",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
       "category": "engineering",
       "tags": [
@@ -55,14 +55,14 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Family-Plugin",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "homepage": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin"
     },
     {
       "name": "atlas-sheets",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
       "category": "engineering",
       "tags": [
@@ -73,14 +73,14 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "homepage": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin"
     },
     {
       "name": "atlas-annotations",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
       "category": "engineering",
       "tags": [
@@ -91,10 +91,30 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Annotations-Plugin",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "homepage": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin",
       "repository": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin"
+    },
+    {
+      "name": "atlas-mep",
+      "version": "2.0.0-alpha.2",
+      "description": "Qualified rigid piping and pipe-only mechanical equipment in owned Revit 2025/2026 projects. Requires Atlas Core.",
+      "category": "engineering",
+      "tags": [
+        "revit",
+        "mep",
+        "piping",
+        "bim",
+        "mcp"
+      ],
+      "source": {
+        "source": "github",
+        "repo": "mroshdy91/RevitAtlas.Mep-Plugin",
+        "ref": "v2.0.0-alpha.2"
+      },
+      "homepage": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin",
+      "repository": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin"
     }
   ]
 }

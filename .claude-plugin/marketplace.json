@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "2.0.0-alpha.1"
+    "version": "2.0.0-alpha.2"
   },
   "plugins": [
     {
@@ -32,11 +32,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin.git",
-        "ref": "v2.0.0-alpha.1",
-        "sha": "4c2628541aa612a40fbf80adc08efc9ea95232b1"
+        "ref": "v2.0.0-alpha.2",
+        "sha": "cd14a7879eb185a9e90690410de5abfed3d0998b"
       },
       "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -49,11 +49,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin.git",
-        "ref": "v2.0.0-alpha.1",
-        "sha": "4eb47ebba8034b2413299c2c0d15f61ec16c680f"
+        "ref": "v2.0.0-alpha.2",
+        "sha": "f8a3ea5a045a4d7c4e5b6c6bf283c37d37cc7d2e"
       },
       "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -66,11 +66,11 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin.git",
-        "ref": "v2.0.0-alpha.1",
-        "sha": "f42523fd642c90811e985e4dd283195077804765"
+        "ref": "v2.0.0-alpha.2",
+        "sha": "f6f250591a8ee87920c5a69f11cdc2394c16bf85"
       },
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "category": "engineering",
       "keywords": [
         "revit",
@@ -83,14 +83,33 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin.git",
-        "ref": "v2.0.0-alpha.1",
-        "sha": "6d7b340052bdffe4a7425e6ccd3fb6d20cc5d06b"
+        "ref": "v2.0.0-alpha.2",
+        "sha": "a6d6e9db99354963d27ed47301ab6b42dbcd31db"
       },
       "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
-      "version": "2.0.0-alpha.1",
+      "version": "2.0.0-alpha.2",
       "category": "engineering",
       "keywords": [
         "revit",
+        "bim",
+        "mcp"
+      ]
+    },
+    {
+      "name": "atlas-mep",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin.git",
+        "ref": "v2.0.0-alpha.2",
+        "sha": "28ee3db138abe2565ca00a184056d57387a9639d"
+      },
+      "description": "Qualified rigid piping and pipe-only mechanical equipment in owned Revit 2025/2026 projects. Requires Atlas Core.",
+      "version": "2.0.0-alpha.2",
+      "category": "engineering",
+      "keywords": [
+        "revit",
+        "mep",
+        "piping",
         "bim",
         "mcp"
       ]

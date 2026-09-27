@@ -22,7 +22,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Core-Plugin.git",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -35,7 +35,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Family-Plugin.git",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -48,7 +48,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Sheets-Plugin.git",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -61,7 +61,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/mroshdy91/RevitAtlas.Annotations-Plugin.git",
-        "ref": "v2.0.0-alpha.1"
+        "ref": "v2.0.0-alpha.2"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "atlas-mep",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/RevitAtlas.Mep-Plugin.git",
+        "ref": "v2.0.0-alpha.2"
       },
       "policy": {
         "installation": "AVAILABLE",
