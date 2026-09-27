@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Installable engineering-agent plugins in the Atlas product family.",
-    "version": "2.0.0-alpha.2"
+    "version": "2.0.0-alpha.3"
   },
   "plugins": [
     {
@@ -24,50 +24,50 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Core-Plugin",
-        "ref": "v2.0.0-alpha.2"
+        "ref": "v2.0.0-alpha.3"
       },
       "description": "Shared Revit sessions, work identity, inspection, review, recovery and verified delivery.",
-      "version": "2.0.0-alpha.2"
+      "version": "2.0.0-alpha.3"
     },
     {
       "name": "atlas-family",
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Family-Plugin",
-        "ref": "v2.0.0-alpha.2"
+        "ref": "v2.0.0-alpha.3"
       },
       "description": "Create, edit and verify native loadable Revit families. Requires Atlas Core.",
-      "version": "2.0.0-alpha.2"
+      "version": "2.0.0-alpha.3"
     },
     {
       "name": "atlas-sheets",
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Sheets-Plugin",
-        "ref": "v2.0.0-alpha.2"
+        "ref": "v2.0.0-alpha.3"
       },
       "description": "Create and edit Revit drawing views, sheets and layouts. Requires Atlas Core.",
-      "version": "2.0.0-alpha.2"
+      "version": "2.0.0-alpha.3"
     },
     {
       "name": "atlas-annotations",
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Annotations-Plugin",
-        "ref": "v2.0.0-alpha.2"
+        "ref": "v2.0.0-alpha.3"
       },
       "description": "Add and edit Revit dimensions, tags, text and drawing annotations. Requires Atlas Core.",
-      "version": "2.0.0-alpha.2"
+      "version": "2.0.0-alpha.3"
     },
     {
       "name": "atlas-mep",
       "source": {
         "source": "github",
         "repo": "mroshdy91/RevitAtlas.Mep-Plugin",
-        "ref": "v2.0.0-alpha.2"
+        "ref": "v2.0.0-alpha.3"
       },
-      "description": "Qualified rigid piping and pipe-only mechanical equipment in owned Revit 2025/2026 projects. Requires Atlas Core.",
-      "version": "2.0.0-alpha.2"
+      "description": "Scoped native MEP in owned standalone Revit 2025/2026 projects: 49 admitted actions and six route kinds. Requires Atlas Core; engineering review required.",
+      "version": "2.0.0-alpha.3"
     }
   ]
 }
