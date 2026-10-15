@@ -116,6 +116,24 @@
         "bim",
         "mcp"
       ]
+    },
+    {
+      "name": "supplieratlas",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/mroshdy91/SupplierAtlas-Plugin.git",
+        "ref": "v0.1.0-alpha.1",
+        "sha": "7227beee72a9103acf595bd8f27df60a8506723b"
+      },
+      "description": "Published engineering product data through three focused read-only remote MCP tools; demo token required.",
+      "version": "0.1.0-alpha.1",
+      "category": "engineering",
+      "keywords": [
+        "product-data",
+        "engineering",
+        "mcp",
+        "hvac"
+      ]
     }
   ]
 }

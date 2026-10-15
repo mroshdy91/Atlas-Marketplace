@@ -68,6 +68,16 @@
       },
       "description": "Scoped native MEP in owned standalone Revit 2025/2026 projects: 49 admitted actions and six route kinds. Requires Atlas Core; engineering review required.",
       "version": "2.0.0-alpha.3"
+    },
+    {
+      "name": "supplieratlas",
+      "source": {
+        "source": "github",
+        "repo": "mroshdy91/SupplierAtlas-Plugin",
+        "ref": "v0.1.0-alpha.1"
+      },
+      "description": "Published engineering product data through three focused read-only remote MCP tools; demo token required.",
+      "version": "0.1.0-alpha.1"
     }
   ]
 }

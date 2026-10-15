@@ -52,6 +52,20 @@ See [client routes and evidence](CLIENTS.md). Compatible local clients use packa
 
 [HAPAtlas](https://github.com/mroshdy91/HAPAtlas-Plugin) remains a separate Carrier HAP product at **1.0.0-alpha.1-private.1**, with its existing private-alpha runtime and access requirements. Its marketplace entry and immutable release pin are unchanged. Atlas for Revit setup does not install HAPAtlas.
 
+## SupplierAtlas - 0.1.0-alpha.1
+
+[SupplierAtlas](https://github.com/mroshdy91/SupplierAtlas-Plugin) retrieves published
+engineering product data using `discover_catalog`, `search_products`, and
+`get_products`. The first remote demo contains 42 Alsharqa SCD supply/return rows.
+It requires an operator-issued `SUPPLIER_ATLAS_TOKEN` in the client environment.
+No Revit, local runtime, or other Atlas plugin is required.
+
+Install `supplieratlas@atlas-marketplace`. See the
+[setup and qualification guide](https://github.com/mroshdy91/SupplierAtlas-Plugin/blob/v0.1.0-alpha.1/README.md).
+Codex on Windows is verified for installation, authentication and tool discovery;
+other clients/platforms are not live-qualified. This partial catalog retrieves
+facts and filters rows; it does not issue engineering suitability verdicts.
+
 ## Repository layout
 
 `catalog.json` owns the release pins. `scripts/generate-marketplaces.ps1` generates client-specific catalogs and rejects unpinned releases. The five public Revit plugin repositories share one private implementation repository. Public payloads exclude private evaluations, customer models, credentials and Autodesk API/template binaries.
