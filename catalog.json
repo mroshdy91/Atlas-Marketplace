@@ -313,13 +313,13 @@
     {
       "name": "supplieratlas",
       "product_name": "SupplierAtlas",
-      "product_version": "0.1.0-alpha.2",
-      "version": "0.1.0-alpha.2",
-      "description": "Published engineering product data through three focused read-only remote MCP tools; demo token required.",
+      "product_version": "0.1.0-alpha.3",
+      "version": "0.1.0-alpha.3",
+      "description": "Published engineering data through three focused remote MCP tools; personal token and usage limits.",
       "repository": "https://github.com/mroshdy91/SupplierAtlas-Plugin",
       "source_repo": "mroshdy91/SupplierAtlas-Plugin",
-      "ref": "v0.1.0-alpha.2",
-      "commit": "4459c6e20a1c8aeef1cc5424b42919041e818a9a",
+      "ref": "v0.1.0-alpha.3",
+      "commit": "344fbbbb3e27efe53c0a63f7c2a3484232cdfa90",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -338,19 +338,19 @@
       "requires_plugins": [],
       "runtime": {
         "delivery": "remote-mcp",
-        "access": "operator-issued-demo-token",
+        "access": "email-registration-personal-token",
         "url": "https://supplieratlas-demo-524685338738.us-central1.run.app/mcp",
         "authentication": "Bearer SUPPLIER_ATLAS_TOKEN",
         "source_repository": "https://github.com/mroshdy91/SupplierAtlas-Demo",
-        "source_commit": "571db65c306c80f02fcaf0aad889286427b7202a",
-        "container": "ghcr.io/mroshdy91/supplieratlas-demo@sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6",
+        "source_commit": "07ab0413dfff6dcbd8856285a62af1454e2990c5",
+        "container": "ghcr.io/mroshdy91/supplieratlas-demo@sha256:42b6480a6426529a9987d570faee2a054b969a920a40849510908cd49cd5a2c4",
         "catalog_version": "alsharqa-engineering-004+d28b77646175",
         "unsigned": true
       },
       "clients": {
-        "guide": "https://github.com/mroshdy91/SupplierAtlas-Plugin/blob/v0.1.0-alpha.2/README.md",
+        "guide": "https://github.com/mroshdy91/SupplierAtlas-Plugin/blob/v0.1.0-alpha.3/README.md",
         "universal_live_qualification": false,
-        "qualified": "Existing Codex Windows integration: installation, authentication and three native tools verified. Alpha.2 guidance/package validated. Five fresh-context Sol audits sampled original PDFs and stressed retrieval; this is not exhaustive cell, engineering suitability or other-client qualification."
+        "qualified": "Codex Windows native integration and existing owner token verified on runtime 0.2.0a1. Hosted fresh personal registration, exact usage accounting, all three tools and revocation passed. Alpha.3 package validated; fresh alpha.3 installation and other clients not qualified. Source PDF audits are sampled, not exhaustive."
       },
       "terms": "Public demo package; runtime token required. Public visibility does not grant a new software or supplier-document license."
     }
