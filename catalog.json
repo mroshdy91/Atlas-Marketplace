@@ -313,13 +313,13 @@
     {
       "name": "supplieratlas",
       "product_name": "SupplierAtlas",
-      "product_version": "0.1.0-alpha.1",
-      "version": "0.1.0-alpha.1",
+      "product_version": "0.1.0-alpha.2",
+      "version": "0.1.0-alpha.2",
       "description": "Published engineering product data through three focused read-only remote MCP tools; demo token required.",
       "repository": "https://github.com/mroshdy91/SupplierAtlas-Plugin",
       "source_repo": "mroshdy91/SupplierAtlas-Plugin",
-      "ref": "v0.1.0-alpha.1",
-      "commit": "7227beee72a9103acf595bd8f27df60a8506723b",
+      "ref": "v0.1.0-alpha.2",
+      "commit": "4459c6e20a1c8aeef1cc5424b42919041e818a9a",
       "category": "Productivity",
       "marketplace_category": "engineering",
       "keywords": [
@@ -342,15 +342,15 @@
         "url": "https://supplieratlas-demo-524685338738.us-central1.run.app/mcp",
         "authentication": "Bearer SUPPLIER_ATLAS_TOKEN",
         "source_repository": "https://github.com/mroshdy91/SupplierAtlas-Demo",
-        "source_commit": "98c55f35e958b259fe03703d8c5c8873a37e5fd8",
-        "container": "ghcr.io/mroshdy91/supplieratlas-demo@sha256:3eb7177a172d9bf82cf3d73526373c8260361ab67aa4dc30b1083e5bdff34111",
-        "catalog_version": "alsharqa-demo-001+d2a8e0f4e913",
+        "source_commit": "571db65c306c80f02fcaf0aad889286427b7202a",
+        "container": "ghcr.io/mroshdy91/supplieratlas-demo@sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6",
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
         "unsigned": true
       },
       "clients": {
-        "guide": "https://github.com/mroshdy91/SupplierAtlas-Plugin/blob/v0.1.0-alpha.1/README.md",
+        "guide": "https://github.com/mroshdy91/SupplierAtlas-Plugin/blob/v0.1.0-alpha.2/README.md",
         "universal_live_qualification": false,
-        "qualified": "Codex 0.162.0-alpha.17.2 on Windows: installation, authentication, three-tool discovery; hosted tool calls separately verified with official Python MCP SDK."
+        "qualified": "Existing Codex Windows integration: installation, authentication and three native tools verified. Alpha.2 guidance/package validated. Five fresh-context Sol audits sampled original PDFs and stressed retrieval; this is not exhaustive cell, engineering suitability or other-client qualification."
       },
       "terms": "Public demo package; runtime token required. Public visibility does not grant a new software or supplier-document license."
     }

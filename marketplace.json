@@ -121,7 +121,7 @@
     },
     {
       "name": "supplieratlas",
-      "version": "0.1.0-alpha.1",
+      "version": "0.1.0-alpha.2",
       "description": "Published engineering product data through three focused read-only remote MCP tools; demo token required.",
       "category": "engineering",
       "tags": [
@@ -133,7 +133,7 @@
       "source": {
         "source": "github",
         "repo": "mroshdy91/SupplierAtlas-Plugin",
-        "ref": "v0.1.0-alpha.1"
+        "ref": "v0.1.0-alpha.2"
       },
       "homepage": "https://github.com/mroshdy91/SupplierAtlas-Plugin",
       "repository": "https://github.com/mroshdy91/SupplierAtlas-Plugin"
